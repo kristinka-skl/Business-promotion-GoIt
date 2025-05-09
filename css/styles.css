@@ -52,11 +52,12 @@ button {
 }
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 1440px;
+        max-width: 1150px;
         padding: 0 20px;
     }
     
 }
+
 /* header */
 
 .header-container {
