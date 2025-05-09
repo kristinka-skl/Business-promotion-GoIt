@@ -315,8 +315,8 @@ color: #fff;
         padding-top: 0;
         padding-bottom: 50px;
     }
-    .feature-list {
-        width: 1110px;
+    .feature-list {        
+        width: 100%;       
         flex-direction: row;       
         gap: 30px;
         margin-bottom: 50px;
