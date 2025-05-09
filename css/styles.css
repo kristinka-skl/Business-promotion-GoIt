@@ -17,6 +17,7 @@ ul, ol {
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
+    color: inherit;
 }
 img {
     display: block;
@@ -51,7 +52,7 @@ button {
 }
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 1150px;
+        max-width: 1440px;
         padding: 0 20px;
     }
     
@@ -106,7 +107,6 @@ display: flex;
     padding: 26px 0;
    font-size: 16px;
 line-height: 1.75;
-color: #22343d;
 }
 .header-nav {
     display: flex;
@@ -168,17 +168,15 @@ color: #fff;
     font-size: 36px;
     line-height: 1.67;
     text-align: center;
-    color: #22343d;
     margin-bottom: 16px;
 }
 .hero-content-text {
     font-size: 18px;
     line-height: 1.56;
     text-align: center;
-    color: #22343d;
     margin-bottom: 32px;
 }
-.btn-get-started {
+.btn-basic {
     border-radius: 4px;
     width: 142px;
     height: 53px;
@@ -246,31 +244,31 @@ color: #fff;
     }
 }
 
+/* section product-specs */
 
+.product-specs {
+    padding: 16px 0 38px 0;
+}
 
-.section-title-centred {
+.section-title {
     text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 50px;
 }
 .feature-list {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 240px;
+    margin: 0 auto 32px auto;
 }
 .feature-item {
-    width: calc((100% - 90px) / 4);
+    padding: 0 7px 5px 7px;       
 }
-.feature-title {
-    margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
 .section-pic {
+    margin: 0 auto;
+    margin-bottom: 24px;
     border-radius: 19px;
     width: 50px;
     height: 50px;
@@ -293,3 +291,43 @@ color: #fff;
 .section-pic-time {
     background-color: #f03e3d;
 }
+.feature-title {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 22px
+}
+.feature-text {
+    text-align: center;    
+    font-size: 16px;
+    line-height: 1.63;
+}
+.sign-up-btn {
+    width: 175px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .product-specs {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .feature-list {
+        width: 1110px;
+        flex-direction: row;       
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .feature-item {
+        width: calc((100% - 3 * 30px) / 4);
+    }
+    .section-pic {
+        margin-left: 0;
+    }
+    .feature-title,
+    .feature-text {
+        text-align: start;
+    }
+}
+
